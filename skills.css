@@ -1,0 +1,86 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: 0;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+body {
+    background-image: url("https://lh3.googleusercontent.com/rIFsvW7dRxxAioK_gs3KccbDU0-J7eTDkwC7Qew-FadXWixAIWyI2tP1ubMg8i4-1Rm5ES3vuiR-m5uIUw5CRhn88vSQwaNM_Ge7VU7w-xT6DrSFHbKZA4RbnfjcYYsmBfGIAKvJ1A");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    text-align: right;
+    width: 100%;
+    height: 50px;
+    margin-top: 0px;
+    margin-right: 10px;
+    z-index: 100;
+    position: fixed;
+    background-color: #03122b;
+    padding-bottom: 12px;
+}
+
+.navbar a {
+    display: inline-block;
+    color: white;
+    font-family: Georgia, serif;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    border: 2px solid transparent;
+
+}
+
+.navbar a:hover {
+    border-color: #00dbd6;
+}
+
+.navbar a.active {
+    color: #00dbd6;
+}
+
+.content {
+    position: absolute;
+    width: 60%;
+    height: 90%;
+    top: 100px;
+    bottom: 15px;
+    left: 20%;
+    z-index: 2;
+    text-align: center;
+}
+
+.words {
+    z-index: 10;
+    color: white;
+    font-family: Georgia, serif;
+    text-align: center;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+}
+
+.lang {
+    height: 320px;
+}
+
+.programs {
+    height: 120px;
+
+}
+
+.os {
+    height: 110px;
+}
+
+.box {
+    padding: 10px;
+    margin-bottom: 25px;
+    background-color: rgba(0,0,0,0.4);
+}
