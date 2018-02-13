@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <head>
-    <title>Contact</title>
+    <title>Contact Me</title>
+    <link rel="stylesheet" typ"text/css" href="standard.css">
     <link rel="stylesheet" type="text/css" href="contact.css">
 </head>
-<body>
-    <div class="navbar">
-        <a href="about.html">ABOUT</a>
-        <a href="portfolio.html">PORTFOLIO</a>
-        <a href="skills.html">SKILLS</a>
-        <a href="education.html">EDUCATION</a>
-        <a href="resume.html">RESUME</a>
-        <a href="contact.html">CONTACT</a>
+<body onload="setSidenav();setContent();" onresize="setContent()">
+    <div id="header">
+        <div id="title">
+            <h1>MAYA VIUST</h1>
+            <h3>PROGRAMMER</h3>
+            <h2 id="page">CONTACT</h2>
+        </div>
     </div>
-    <div class="email-form">
-        <h2>Email is preferred</h2>
-        <h3>Otherwise, request another form of contact below.</h3>
+    <div class="navbox" onclick="toggleSidenav()"> <!--hamburger side menu-->
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+    </div>
+    <div id="sidenav">
+        <div class="nav-wrapper">
+            <ul id="nav-list">
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="resume.html">RESUME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <h2 id="note">Email is preferred</h2>
+        <h3 id="note">Otherwise, request another form of contact below.</h3>
         <form id="contactform" method="POST" action="https://formspree.io/viust.maya@gmail.com">
             <input type="hidden" name="_subject" value="Website contact"/>
             <input type="email" name="email" placeholder="Your email">
@@ -22,5 +39,17 @@
             <button type="submit">Send</button>
         </form>
     </div>
+    <script src="functions.js"></script>
+    <script>
+    function setContent() {
+        var header_style = window.getComputedStyle(header);
+
+        if (window.innerWidth < 480) {
+            document.getElementById("content").style.top =
+                (getValue(header_style.getPropertyValue('height')) + 20) + "px";
+        }
+
+    }
+    </script>
 </body>
 </html>

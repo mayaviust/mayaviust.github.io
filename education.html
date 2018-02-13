@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <head>
     <title>Education</title>
+    <link rel="stylesheet" type="text/css" href="standard.css">
     <link rel="stylesheet" type="text/css" href="education.css">
 </head>
-<body>
-    <div class="navbar">
-        <a href="about.html">ABOUT</a>
-        <a href="portfolio.html">PORTFOLIO</a>
-        <a href="skills.html">SKILLS</a>
-        <a href="education.html">EDUCATION</a>
-        <a href="resume.html">RESUME</a>
-        <a href="contact.html">CONTACT</a>
+<body onload="setSidenav(); setContent()" onresize="setContent()">
+    <div id="header">
+        <div id="title">
+            <h1>MAYA VIUST</h1>
+            <h3>PROGRAMMER</h3>
+            <h2 id="page">EDUCATION</h2>
+        </div>
     </div>
-    <div class="content">
+    <div class="navbox" onclick="toggleSidenav()"> <!--hamburger side menu-->
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+    </div>
+    <div id="sidenav">
+        <div class="nav-wrapper">
+            <ul id="nav-list">
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="resume.html">RESUME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
         <div class="college box">
             <h2>Georgia Institute of Technology</h2>
             <h3>Basics:</h3>
@@ -57,8 +74,8 @@
             </p>
         </div> <!--college-->
         <div class="high-school box">
-            <h2>Past</h2><br>
-            <h3>Georgia Gwinnett College - Dual Enrollment</h3>
+            <h2>Past</h2>
+            <h3>Georgia Gwinnett College<br><br><i>Dual Enrollment</i></h3>
             <h4>Lawrenceville, GA</h4>
             <p>
                 August 2014 - May 2016<br>
@@ -75,5 +92,14 @@
             </p>
         </div>
     </div> <!--content-->
+    <script src="functions.js"></script>
+    <script>
+    function setContent() {
+        var header_style = window.getComputedStyle(header);
+
+        document.getElementById("content").style.top =
+            (getValue(header_style.getPropertyValue('height')) + 20) + "px";
+    }
+    </script>
 </body>
 </html>
