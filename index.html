@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="standard.css">
     <link rel="stylesheet" type="text/css" href="about.css">
 </head>
-<body onload="setPic();setSidenav();" onresize="setPic();">
+<body onload="setPic();setSidenav();" onresize="setPic();setSidenav()">
     <div id="header">
         <div id="title">
             <h1>MAYA VIUST</h1>
@@ -18,7 +18,7 @@
     </div>
     <div id="sidenav">
         <div class="nav-wrapper">
-            <ul id="nav-list">
+            <ul id="navList">
                 <li><a href="index.html">ABOUT</a></li>
                 <li><a href="portfolio.html">PORTFOLIO</a></li>
                 <li><a href="education.html">EDUCATION</a></li>
@@ -74,16 +74,26 @@
         var pic_style = window.getComputedStyle(me);
         var words_style = window.getComputedStyle(wordsContent);
         var content_style = window.getComputedStyle(content);
+        var nav_style = window.getComputedStyle(navList);
 
         var pic_height = getValue(pic_style.getPropertyValue('height'))
             + getValue(pic_style.getPropertyValue('border-width'));
 
-        document.getElementById("content").style.top =
-            (getValue(header_style.getPropertyValue('height'))
-            - getValue(pic_style.getPropertyValue('height')) * 0.5) + "px";
+        if (window.innerWidth < 480) {
+            document.getElementById("content").style.top =
+                (getValue(header_style.getPropertyValue('height'))
+                - getValue(pic_style.getPropertyValue('height')) * 0.5) + "px";
 
-        document.getElementById("wordsContent").style.top =
-            (getValue(pic_style.getPropertyValue('height')) + 20) + "px";
+            document.getElementById("wordsContent").style.top =
+                (getValue(pic_style.getPropertyValue('height')) + 20) + "px";
+        } else {
+            document.getElementById("content").style.top =
+                (getValue(nav_style.getPropertyValue('height')) + 20) + "px";
+
+            document.getElementById("wordsContent").style.top =
+                (getValue(pic_style.getPropertyValue('height')) + 20) + "px";
+        }
+
     }
     </script>
 </body>
