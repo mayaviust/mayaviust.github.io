@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <head>
     <title>Maya Viust</title>
-    <link rel="stylesheet" type="text/css" href="standard.css">
-    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body onload="setPic();setSidenav();" onresize="setPic();setSidenav()">
-    <div id="header">
+<body onload="setContent();" onresize="setContent();">
+    <div id="above-nav">
+        <div id="portrait">
+            <img id="me" src="https://lh3.googleusercontent.com/DqhD5dWMp915wivjo7xtnhNDABbbGGgBFsCEYScp42lKxYC6SzW4ZvYEQEJVXX8OXtX2HawAfis88Dz2t7rOEOSbezN39t9ZqQG-QrxkkoPtiDnT-4q1ABQ0yVvGzDKi2yCKZDHM4g=w2400" alt="curly headed coder ready to work">
+        </div>
         <div id="title">
             <h1>MAYA VIUST</h1>
             <h3>PROGRAMMER</h3>
         </div>
     </div>
-    <div class="navbox" onclick="toggleSidenav()"> <!--hamburger side menu-->
+    <div class="navbox"> <!--hamburger side menu-->
         <div class="first"></div>
         <div class="second"></div>
         <div class="third"></div>
@@ -21,80 +23,86 @@
         <div class="nav-wrapper">
             <ul id="navList">
                 <li><a href="index.html">ABOUT</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="education.html">EDUCATION</a></li>
-                <li><a href="skills.html">SKILLS</a></li>
-                <li><a href="resume.html">RESUME</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="html/portfolio.html">PORTFOLIO</a></li>
+                <li><a href="html/education.html">EDUCATION</a></li>
+                <li><a href="html/skills.html">SKILLS</a></li>
+                <li><a href="html/resume.html">RESUME</a></li>
+                <li><a href="html/contact.html">CONTACT</a></li>
             </ul>
         </div>
     </div>
-    <div id="content">
-        <div id="portrait">
-            <img id="me" src="https://lh3.googleusercontent.com/zuPMUPPAioQDJbcGJS6bP9VCrM-wIZELq8gOhXFwz0LbhmyjwbHu7-aWpUiSiVKV0MmoSdxQq1XG9wnmZ_QIT7ZWbEnZdn4q73elN_dln8J4KYpBDdTJbbRgFgebRlqEixC3OmzX1g" alt="curly headed coder ready to work">
-        </div>
-        <div id="wordsContent">
-            <div class="words">
-                <h2>Hey there!</h2>
-                <p>
-                    I'm an Atlanta based programmer and currently an undergraduate
-                    junior in computer science at Georgia Tech. Officially, my degree
-                    concentrations are
-                    <a href="https://www.cc.gatech.edu/content/people" target="_blank">
-                        People</a> and
-                    <a href="https://www.cc.gatech.edu/information-internetworks" target="_blank">
-                        Information Internetworks</a>
-                        which means that I focus on human-computer interaction as well as
-                        information processing, storage, and security.
-                    <br><br>
-                        Most of my experience is in front-end development but as my
-                        studies involve more back-end technology, I look for ways to
-                        further my knowledge and skills outside of class.
-                    <br><br>
-                        As of early 2018, I'm applying for internships for Summer 2018.
-                        If you are interested in offering a position visit the
-                        Portfolio, Skills, Education links for my qualifications and Contact
-                        for how to reach me.
-                    </p>
-            </div> <!-- words -->
-        </div> <!-- words content-->
+    <div class="navbar">
+        <a href="index.html">ABOUT</a>
+        <a href="html/portfolio.html">PORTFOLIO</a>
+        <a href="html/education.html">EDUCATION</a>
+        <a href="html/skills.html">SKILLS</a>
+        <a href="html/resume.html">RESUME</a>
+        <a href="html/contact.html">CONTACT</a>
     </div>
-    <script src="functions.js"></script>
+    <div class="above-content">
+        <div id="intro">
+            <h1>MAYA VIUST</h1>
+            <h3>PROGRAMMER</h3>
+            <button type="button" onclick="smoothScroll()">ABOUT ME</button>
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="bttm-pic">
+            <img id="me" src="https://lh3.googleusercontent.com/DqhD5dWMp915wivjo7xtnhNDABbbGGgBFsCEYScp42lKxYC6SzW4ZvYEQEJVXX8OXtX2HawAfis88Dz2t7rOEOSbezN39t9ZqQG-QrxkkoPtiDnT-4q1ABQ0yVvGzDKi2yCKZDHM4g=w2400" alt="curly headed coder ready to work">
+        </div>
+        <div id="rightWrapper">
+            <h1>ABOUT</h1>
+            <p>
+                I'm an Atlanta based programmer and currently an undergraduate
+                junior in computer science at Georgia Tech. Officially, my degree
+                concentrations are
+                <a href="https://www.cc.gatech.edu/content/people" target="_blank">
+                    People</a> and
+                <a href="https://www.cc.gatech.edu/information-internetworks" target="_blank">
+                    Information Internetworks</a>,
+                    which means that I focus on human-computer interaction as well as
+                    information processing, storage, and security.
+                <br><br>
+                    Most of my experience is in front-end development but as my
+                    studies involve more back-end technology, I look for ways to
+                    further my knowledge and skills outside of class.
+                <br><br>
+                    As of early 2018, I'm applying for internships for Summer 2018.
+                    If you are interested in offering a position visit the
+                    Portfolio, Skills, Education tabs for my qualifications and Contact
+                    for how to reach me.
+            </p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/functions.js"></script>
     <script>
-    function setPic() {
-        var pic_width = document.getElementById("portrait").offsetWidth;
-        var window_width = window.innerWidth;
-        var new_width = (window_width - pic_width) / 2;
+    function setContent() {
+        //set mobile content
+        if ($(window).width() < 768) {
+            //set title in relation to portrait img
+            $('#title').css({
+                top: ($('#portrait img').height() + 30) + 'px',
+                left: (($(window).width() - $('#title').width()) / 2) + 'px'
+            });
 
-        document.getElementById("portrait").style.left = "" + new_width + "px";
-        setAbtContent();
-    }
+            //center image
+            $('#portrait').css('left', (($(window).width() - $('#portrait').width()) / 2) + 'px');
+            $('#portrait img').css('left', (($('#portrait').width() - $('#portrait img').width()) / 2) + 'px');
 
-    function setAbtContent() {
-        var header_style = window.getComputedStyle(header);
-        var pic_style = window.getComputedStyle(me);
-        var words_style = window.getComputedStyle(wordsContent);
-        var content_style = window.getComputedStyle(content);
-        var nav_style = window.getComputedStyle(navList);
-
-        var pic_height = getValue(pic_style.getPropertyValue('height'))
-            + getValue(pic_style.getPropertyValue('border-width'));
-
-        if (window.innerWidth < 480) {
-            document.getElementById("content").style.top =
-                (getValue(header_style.getPropertyValue('height'))
-                - getValue(pic_style.getPropertyValue('height')) * 0.5) + "px";
-
-            document.getElementById("wordsContent").style.top =
-                (getValue(pic_style.getPropertyValue('height')) + 20) + "px";
+            //set header
+            $('#above-nav').css('height', ($('#title').height() + $('#portrait img').height() + 40) + 'px');
+            $('#content').css('margin-top', $('#above-nav').height() + 'px');
         } else {
-            document.getElementById("content").style.top =
-                (getValue(nav_style.getPropertyValue('height')) + 20) + "px";
-
-            document.getElementById("wordsContent").style.top =
-                (getValue(pic_style.getPropertyValue('height')) + 20) + "px";
+            $('#content').offset({top: $('#intro button').offset().top + 100});
+            $('#bttm-pic').offset({top: $('#content h1').offset().top});
         }
-
+    }
+    function smoothScroll() {
+        $('html, body').animate({
+            scrollTop: $('#content').offset().top
+        }, 1000);
     }
     </script>
 </body>

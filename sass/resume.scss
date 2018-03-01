@@ -1,0 +1,32 @@
+@import 'standard';
+@import 'mobile';
+
+#link-wrapper {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+
+    a {
+        font-weight: bold;
+        text-decoration: underline;
+        font-weight: 15px;
+        letter-spacing: 3px;
+    }
+}
+
+#resume {
+    h1, h3 {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: $tablet-bp) {
+    #content {
+        position: absolute;
+        width: 60%;
+        left: 20%;
+        padding: 0px 40px;
+    }
+}

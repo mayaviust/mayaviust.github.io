@@ -1,0 +1,40 @@
+@import 'standard';
+@import 'mobile';
+
+@media screen and (min-width: $tablet-bp) {
+    #content {
+        position: absolute;
+        width: 40%;
+        left: 30%;
+        padding: 0px 40px;
+
+        .box {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-bp) {
+    #content {
+        width: 70%;
+        height: auto;
+        left: 15%;
+        display: block;
+
+        .lang, #right-wrapper {position: absolute;}
+
+        .lang {
+            left: 0;
+            top: 0;
+            width: 50%;
+        }
+
+        #right-wrapper {
+            top: 0;
+            right: 0;
+            width: 50%;
+            display: block;
+        }
+
+    }
+}

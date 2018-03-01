@@ -1,0 +1,52 @@
+@import 'standard';
+@import 'mobile';
+
+#wrapper {
+    position: absolute;
+    width: 98%;
+    left: 1%;
+    display: block;
+
+    .block {
+        margin-bottom: 20px;
+        padding: 5px 10px;
+        background-color: rgba(0,0,0,0.1);
+
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+.gh {
+    text-align: center;
+}
+
+.pic {
+    text-align: center;
+
+    img {
+        width: 100%;
+    }
+
+    iframe {
+        width: 98%;
+        left: 1%;
+    }
+}
+
+@media screen and (min-width: $tablet-bp) {
+    #wrapper {
+        width: 60%;
+        left: 20%;
+
+        .block {
+            padding: 15px;
+        }
+    }
+
+    img, iframe {
+        width: 80%;
+        left: 10%;
+    }
+}

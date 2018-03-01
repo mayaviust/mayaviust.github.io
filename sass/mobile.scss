@@ -1,0 +1,31 @@
+.navbox div {
+    background-color: $accent-color;
+}
+
+#header {
+    position: fixed;
+    height: 35px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0;
+    background-color: $nav-color;
+    z-index: 70;
+
+    h2 {
+        position: fixed;
+        top: 5px;
+        right: 5px;
+        padding: 0;
+        margin: 0;
+        color: $accent-color;
+    }
+}
+
+#content {
+    color: black;
+    top: 50px;
+    position: absolute;
+    width: 90%;
+    left: 5%;
+}

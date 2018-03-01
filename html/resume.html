@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <title>Resume</title>
+    <link rel="stylesheet" type="text/css" href="../css/resume.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="setContent()" onresize="setContent()">
+    <div class="navbox"> <!--hamburger side menu-->
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+    </div>
+    <div id="header">
+        <h2 id="page">RESUME</h2>
+    </div>
+    <div class="navbar">
+        <a href="../index.html">ABOUT</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="education.html">EDUCATION</a>
+        <a href="skills.html">SKILLS</a>
+        <a href="resume.html">RESUME</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+    <div id="sidenav">
+        <div class="nav-wrapper">
+            <ul id="nav-list">
+                <li><a href="../index.html">ABOUT</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="resume.html">RESUME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <div id="link-wrapper"><a href="../Viust_Resume-online.pdf" download="Maya Viust's Resume">DOWNLOAD RESUME</a></div>
+        <div id="resume">
+            <h1>Maya Viust</h1>
+            <h3>www.mayaviust.com</h3>
+            <br>
+            <h2>OBJECTIVE:</h2>
+            <p>To obtain a full-time internship in software development for Summer 2018.</p>
+            <br>
+            <h2>EDUCATION:</h2>
+            <p><b>Georgia Institute of Technology</b>, Atlanta, GA
+                <p>August 2016 - Present</p>
+                <ul>
+                    <li>Candidate for Bachelor of Science in Computer Science (May 2019)</li>
+                    <li>Threads: Information Internetworks, People</li>
+                    <li>GPA: 3.46</li>
+                    <li>Dean’s List: Fall 2017</li>
+                </ul>
+            </p>
+            <p><b>Norcross High School</b>, Norcross, GA
+                <p>August 2012 - May 2016</p>
+                <ul>
+                    <li>Graduated with Honors</li>
+                    <li>GPA: 4.0</li>
+                </ul>
+            </p>
+            <br>
+            <h2>WORK EXPERIENCE:</h2>
+            <p><b>Georgia Gwinnett College Library</b>, Lawrenceville, GA
+                <p><b><i>Student Assistant</i></b></p>
+                <p>February 2016 - July 2016</p>
+                <ul>
+                    <li>Assisted patrons with electronic equipment and processed library materials.</li>
+                    <li>Streamlined the retrieval of electronic materials.</li>
+                </ul>
+            </p>
+            <br>
+            <h2>SKILLS:</h2>
+            <p>
+                <p><b>Computer Languages</b>: Java, Python, HTML, CSS, JavaScript, JQuery, Sass, MySQL</p>
+                <p><b>Operating Systems</b>: Windows, Mac OS X, Ubuntu</p>
+                <p><b>Foreign Languages</b>: Proficient Spanish</p>
+            </p>
+            <br>
+            <h2>CODE EXPERIENCE:</h2>
+            <p><b>www.mayaviust.com</b></p>
+            <ul>
+                <li>Personal website coded from scratch using HTML, CSS, and JavaScript. Optimized for mobile, tablet, and desktop.</li>
+            </ul>
+            <p><b>www.guavabeans.tumblr.com</b></p>
+            <ul>
+                <li>Modified Tumblr theme HTML code to create personalized header that facilitates blog navigation. Optimized for desktop and tablet.</li>
+            </ul>
+            <p><b>Number Converter</b></p>
+            <ul>
+                <li>Java program that converts positive integers between the numerical systems: binary, decimal, hexadecimal, and octal.</li>
+                <li>Graphical user interface implemented with JavaFX.</li>
+            </ul>
+        </div>
+    </div> <!--content-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../js/functions.js"></script>
+    <script>
+    function setContent() {
+        //50 mobile offset, 20 button resume space
+        $('#resume').css('margin-top', ($('#content a').height() + $('#header').height()) + 'px');
+
+        $('#content a').css('right', (($('#content').width() - $().width('#content a')) / 2) + 'px');
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+@import 'standard';
+@import 'mobile';
+
+#content #center {
+    text-align: center;
+}
+
+@media screen and (min-width: $tablet-bp) {
+    .box {
+        padding: 0 60px;
+    }
+}
