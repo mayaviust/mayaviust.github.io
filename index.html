@@ -39,37 +39,39 @@
         <a href="html/resume.html">RESUME</a>
         <a href="html/contact.html">CONTACT</a>
     </div>
-    <div class="above-content">
-        <div id="intro">
-            <h1>MAYA VIUST</h1>
-            <h3>PROGRAMMER</h3>
-            <button type="button" onclick="smoothScroll()">ABOUT ME</button>
+    <div class="under-nav">
+        <div class="above-content">
+            <div id="intro">
+                <h1>MAYA VIUST</h1>
+                <h3>PROGRAMMER</h3>
+                <button type="button" onclick="smoothScroll()">ABOUT ME</button>
+            </div>
+        </div>
+        <div id="content">
+            <div id="bttm-pic">
+                <img id="me" src="https://lh3.googleusercontent.com/DqhD5dWMp915wivjo7xtnhNDABbbGGgBFsCEYScp42lKxYC6SzW4ZvYEQEJVXX8OXtX2HawAfis88Dz2t7rOEOSbezN39t9ZqQG-QrxkkoPtiDnT-4q1ABQ0yVvGzDKi2yCKZDHM4g=w2400" alt="curly headed coder ready to work">
+            </div>
+            <div id="rightWrapper">
+                <h1>ABOUT ME</h1>
+                <p>
+                    I'm an Atlanta based programmer and currently an undergraduate
+                    junior in computer science at Georgia Tech. Officially, my degree
+                    concentrations are
+                    <u><a href="https://www.cc.gatech.edu/content/people" target="_blank">
+                        People</a></u> and
+                    <u><a href="https://www.cc.gatech.edu/information-internetworks" target="_blank">
+                        Information Internetworks</a></u>,
+                        which means that I focus on human-computer interaction as well as
+                        information processing, storage, and security.
+                    <br><br>
+                        Most of my experience is in front-end development but as my
+                        studies involve more back-end technology, I look for ways to
+                        further my knowledge and skills outside of class.
+                </p>
+            </div>
         </div>
     </div>
 
-    <div id="content">
-        <div id="bttm-pic">
-            <img id="me" src="https://lh3.googleusercontent.com/DqhD5dWMp915wivjo7xtnhNDABbbGGgBFsCEYScp42lKxYC6SzW4ZvYEQEJVXX8OXtX2HawAfis88Dz2t7rOEOSbezN39t9ZqQG-QrxkkoPtiDnT-4q1ABQ0yVvGzDKi2yCKZDHM4g=w2400" alt="curly headed coder ready to work">
-        </div>
-        <div id="rightWrapper">
-            <h1>ABOUT</h1>
-            <p>
-                I'm an Atlanta based programmer and currently an undergraduate
-                junior in computer science at Georgia Tech. Officially, my degree
-                concentrations are
-                <u><a href="https://www.cc.gatech.edu/content/people" target="_blank">
-                    People</a></u> and
-                <u><a href="https://www.cc.gatech.edu/information-internetworks" target="_blank">
-                    Information Internetworks</a></u>,
-                    which means that I focus on human-computer interaction as well as
-                    information processing, storage, and security.
-                <br><br>
-                    Most of my experience is in front-end development but as my
-                    studies involve more back-end technology, I look for ways to
-                    further my knowledge and skills outside of class.
-            </p>
-        </div>
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/functions.js"></script>
     <script>
@@ -96,8 +98,8 @@
     }
     function smoothScroll() {
         $('html, body').animate({
-            scrollTop: $('#content').offset().top
-        }, 1000);
+            scrollTop: $(document).height()
+        }, 900);
     }
     </script>
 </body>

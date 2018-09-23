@@ -82,6 +82,10 @@ a {
   #content #portrait {
     display: none; }
 
+.gh {
+    margin-top: 55px;
+}
+
 @media screen and (min-width: 768px) {
   .navbox, #header, #above-nav {
     display: none; }
@@ -99,6 +103,10 @@ a {
     .navbar a {
       color: white;
       padding: 0px 10px; }
+
+    .gh {
+        margin-top: 50px;
+    }
 
   #content {
     position: absolute;
@@ -139,10 +147,12 @@ a {
   width: 98%;
   left: 1%;
   display: block; }
+
   #wrapper .block {
     margin-bottom: 20px;
     padding: 5px 10px;
     background-color: rgba(0, 0, 0, 0.1); }
+
     #wrapper .block h2 {
       text-align: center; }
 

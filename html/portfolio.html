@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="../css/portfolio.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body onload="setContent()" onresize="setContent()">
+<body>
     <div class="navbox"> <!--hamburger side menu-->
         <div class="first"></div>
         <div class="second"></div>
@@ -22,7 +22,7 @@
         <a href="contact.html">CONTACT</a>
     </div>
     <div id="sidenav">
-        <div class="nav-wrapper">
+        <div class="nav-wrapper block">
             <ul id="nav-list">
                 <li><a href="../index.html">ABOUT</a></li>
                 <li><a href="portfolio.html">PORTFOLIO</a></li>
@@ -33,7 +33,7 @@
             </ul>
         </div>
     </div>
-    <div id="content">
+    <div class="content block">
         <div id="wrapper">
             <div class="gh block">
                 <p>Go to my <u><a href="https://github.com/mayaviust/sample-works" target="_blank">github</a></u> or look through the examples below.</p>
@@ -51,7 +51,46 @@
                         on a different device or if you're on desktop change the window
                         width to see the difference.
                         <br>
+                        <br>
                         <u><a href="https://github.com/mayaviust/mayaviust.github.io" target="_blank">See the code on github</a></u>
+                    </p>
+                </div>
+            </div>
+            <div class="mg block">
+                <h2>Memory</h2>
+                <div class="pic right" style="width:100%;height:0;padding-bottom:44%;position:relative;"><iframe src="https://giphy.com/embed/1vZ5cYvqWmVaCWrWjU" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                <div class="words left">
+                    <p>
+                        Here is a digital version of the card game memory made with jQuery, CSS, and HTML.
+                        You have a few seconds to memorize cards' position. Once the words disappear, find the matches.
+                        When you've found all the matches your completion time will show up.
+                        This was originally for a psychology experiment to measure the effect of the
+                        color of the environment on the participant's performance in a memory-based task.
+                        I've modified it to be more game-like for this website. Play on a desktop.
+                        Above is a gif of the game demo.
+                        <br>
+                        <br>
+                        <u><a href="mem-game.html" target="_blank">Play the game</a></u>
+                        <br>
+                        <u><a href="https://github.com/mayaviust/sample-works/tree/master/Memory" target="_blank">See the code on github</a></u>
+                    </p>
+                </div>
+            </div>
+            <div class="nc block">
+                <h2>Number Converter</h2>
+                <div class="pic left" style="width:100%;height:0;padding-bottom:44%;position:relative;"><iframe src="https://giphy.com/embed/3o6nV3jvmCKf1nU4DK" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                <div class="words right">
+                    <p>
+                        <b>Front end:</b> javafx
+                        <br>
+                        <b>Back end:</b> Java
+                        <br>
+                        This program converts positive numbers in one of four
+                        formats (binary, decimal, hexadecimal, and octal) to another.
+                        Above is a gif of the program demo.
+                        <br>
+                        <br>
+                        <u><a href="https://github.com/mayaviust/sample-works/tree/master/NumberConverter" target="_blank">See the code on github</a></u>
                     </p>
                 </div>
             </div>
@@ -73,33 +112,18 @@
                     </p>
                 </div>
             </div>
-            <div class="nc block">
-                <h2>Number Converter</h2>
-                <div class="pic left" style="width:100%;height:0;padding-bottom:44%;position:relative;"><iframe src="https://giphy.com/embed/3o6nV3jvmCKf1nU4DK" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+            <div class="bmi block">
+                <h2>BMI Calculator</h2>
+                <div class="pic left" style="width:100%;height:0;padding-bottom:44%;position:relative;"><iframe src="https://giphy.com/embed/1yT7hcx3nxLzjBTwpW" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
                 <div class="words right">
                     <p>
                         <b>Front end:</b> javafx
                         <br>
                         <b>Back end:</b> Java
                         <br>
-                        This program converts positive numbers in one of four
-                        formats (binary, decimal, hexadecimal, and octal) to another.
-                        <br>
-                        <u><a href="https://github.com/mayaviust/sample-works/tree/master/NumberConverter" target="_blank">See the code on github</a></u>
-                    </p>
-                </div>
-            </div>
-            <div class="bmi block">
-                <h2>BMI Calculator</h2>
-                <div class="pic right" style="width:100%;height:0;padding-bottom:44%;position:relative;"><iframe src="https://giphy.com/embed/1yT7hcx3nxLzjBTwpW" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-                <div class="words left">
-                    <p>
-                        <b>Front end:</b> javafx
-                        <br>
-                        <b>Back end:</b> Java
-                        <br>
                         This program takes in the user's height in pounds and
-                        weight in inches and returns their BMI.
+                        weight in inches and returns their BMI. Above is a gif of the program demo.
+                        <br>
                         <br>
                         <u><a href="https://github.com/mayaviust/sample-works/tree/master/BMIcalc" target="_blank">See the code on github</a></u>
                     </p>
@@ -107,15 +131,16 @@
             </div>
             <div class="sa block">
                 <h2>Shape Area</h2>
-                <div class="pic left" style="width:100%;height:0;padding-bottom:70%;position:relative;"><iframe src="https://giphy.com/embed/4WFFxDrSvYVWc6jvWo" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-                <div class="words right">
+                <div class="pic right" style="width:100%;height:0;padding-bottom:70%;position:relative;"><iframe src="https://giphy.com/embed/4WFFxDrSvYVWc6jvWo" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                <div class="words left">
                     <p>
                         <b>Front end:</b> javafx
                         <br>
                         <b>Back end:</b> Java
                         <br>
                         This program calculates the area for a variety of shapes
-                        given the user's input.
+                        given the user's input. Above is a gif of the program demo.
+                        <br>
                         <br>
                         <u><a href="https://github.com/mayaviust/sample-works/tree/master/ShapeArea" target="_blank">See the code on github</a></u>
                     </p>
