@@ -144,6 +144,10 @@ form {
   form textarea {
     margin: 15px 0px; }
 
+#email-input {
+  margin-top: 20px;
+}
+
 #btn-wrapper {
   position: absolute;
   width: 100%;
