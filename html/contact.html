@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
-    <title>Skills</title>
-    <link rel="stylesheet" type="text/css" href="../css/skills.css">
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -11,7 +11,7 @@
         <div class="third"></div>
     </div>
     <div id="header">
-        <h2 id="page">SKILLS</h2>
+        <h2 id="page">CONTACT</h2>
     </div>
     <div class="navbar">
         <a href="../index.html">ABOUT</a>
@@ -34,23 +34,16 @@
         </div>
     </div>
     <div id="content">
-        <div class="lang box">
-            <h2>LANGUAGES</h2>
-            <h3>Computer Languages</h3>
-            <p>Angular, Java, Python, SQL, HTML, CSS, JavaScript, jQuery, Sass, TCL</p>
-            <h3>Foreign Language</h3>
-            <p>Proficient in reading, writing, and speaking Spanish.</p>
-        </div>
-        <div id="right-wrapper">
-            <div class="programs box">
-                <h2>TOOLS</h2>
-                <p>Git, Aqua Data Studio, JIRA, MariaDB, MySQL, Android Studio, IntelliJ, DGLux5</p>
+        <h2 id="note">Email is preferred</h2>
+        <h3 id="note">Otherwise, request another form of contact below.</h3>
+        <form id="contactform" method="POST" action="https://formspree.io/viust.maya@gmail.com">
+            <input type="hidden" name="_subject" value="Website contact"/>
+            <input type="email" name="email" placeholder="Your email">
+            <textarea name="message" placeholder="Your message"></textarea>
+            <div id="btn-wrapper">
+                <button type="submit">Send</button>
             </div>
-            <div class="os box">
-                <h2>OPERATING SYSTEMS</h2>
-                <p>Windows, Ubuntu, Mac OS X</p>
-            </div>
-        </div>
+        </form>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="../js/functions.js"></script>
